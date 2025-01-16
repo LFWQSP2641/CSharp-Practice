@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TextEditor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="textEditTabWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="preferencesMenu">
+    <property name="title">
+     <string>Preferences</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="aboutMenu">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="editMenu">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="editMenu"/>
+   <addaction name="preferencesMenu"/>
+   <addaction name="aboutMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
